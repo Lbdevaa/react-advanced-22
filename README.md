@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# CRA TypeScript, Redux Toolkit, RTKQuery, Tailwind
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
