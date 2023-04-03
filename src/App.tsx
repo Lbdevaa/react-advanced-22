@@ -1,7 +1,15 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import FavouritesPage from './pages/FavouritesPage';
 
 function App() {
-  return <h1 className='font-bold'>Advanced</h1>;
+  return (
+    <Routes>
+      <Route path='/' element={<HomePage />}></Route>
+      <Route path='/favourites' element={<FavouritesPage />}></Route>
+    </Routes>
+  );
 }
 
 export default App;
