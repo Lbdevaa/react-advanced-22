@@ -10,6 +10,7 @@ export const githubApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://api.github.com', // Для всей этой api базовый url
   }),
+  refetchOnFocus: true, // При возвращении на страницу (окно получает фокус) происходит обновление данных
 
   endpoints: (build) => ({
     // generic: ответ от сервера, параметр для осуществления запроса
