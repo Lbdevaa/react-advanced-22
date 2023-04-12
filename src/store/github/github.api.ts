@@ -13,7 +13,8 @@ export const githubApi = createApi({
 
   endpoints: (build) => ({
     // generic: ответ от сервера, параметр для осуществления запроса
-    searchUsers: build.query<ServerResponse<IUser>, string>({
+    // searchUsers: build.query<ServerResponse<IUser>, string>({
+    searchUsers: build.query<IUser[], string>({
       //   query: () => 'search/users',
       query: (search: string) => ({
         url: 'search/users',
@@ -22,6 +23,8 @@ export const githubApi = createApi({
           per_page: 10,
         },
       }),
+      // трансформируем данные из ответа
+      transformResponse: (response: ServerResponse<IUser>) => response.items,
     }),
   }),
 });

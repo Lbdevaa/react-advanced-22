@@ -5,6 +5,7 @@ export const store = configureStore({
   reducer: {
     [githubApi.reducerPath]: githubApi.reducer,
   },
+  // для работы с кэшем/авто обновл. обозначим middleware
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(githubApi.middleware),
 });
