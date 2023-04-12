@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-advanced-22/static/css/main.28b8063a.css",
+    "main.js": "/react-advanced-22/static/js/main.3d356911.js",
+    "index.html": "/react-advanced-22/index.html",
+    "main.28b8063a.css.map": "/react-advanced-22/static/css/main.28b8063a.css.map",
+    "main.3d356911.js.map": "/react-advanced-22/static/js/main.3d356911.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28b8063a.css",
+    "static/js/main.3d356911.js"
+  ]
+}
