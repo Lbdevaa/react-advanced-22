@@ -27,8 +27,15 @@ export const githubApi = createApi({
       // трансформируем данные из ответа
       transformResponse: (response: ServerResponse<IUser>) => response.items,
     }),
+    // getUserRepos: build.query<any, void>({
+    getUserRepos: build.query<any, string>({
+      query: (username: string) => ({
+        url: `users/${username}/repos`,
+      }),
+    }),
   }),
 });
 
 // const { useSearchUsersMutation } = githubApi;
-export const { useSearchUsersQuery } = githubApi;
+// useLazy - не делает запрос сразу
+export const { useSearchUsersQuery, useLazyGetUserReposQuery } = githubApi;
