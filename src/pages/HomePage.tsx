@@ -54,7 +54,9 @@ const HomePage = () => {
           </ul>
         )}
         <div className='container'>
-          {areReposLoading && <p className='text-center'>Loading repos...</p>}
+          {areReposLoading && (
+            <p className='py-2 text-center'>Loading repos...</p>
+          )}
           {repos?.map((repo: IRepo) => (
             <RepoCard repo={repo} key={repo.id} />
           ))}

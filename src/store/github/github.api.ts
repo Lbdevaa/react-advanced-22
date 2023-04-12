@@ -33,9 +33,10 @@ export const githubApi = createApi({
         url: `users/${username}/repos`,
       }),
     }),
+    // createUser: build.mutation<any,void>({query:()=>``})
   }),
 });
 
-// const { useSearchUsersMutation } = githubApi;
+// const { useCreateUserMutation } = githubApi;
 // useLazy - не делает запрос сразу
 export const { useSearchUsersQuery, useLazyGetUserReposQuery } = githubApi;
